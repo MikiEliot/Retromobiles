@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--Slider-->
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen">
+    <!--============-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
+    <link rel="stylesheet" href="style.css">
+    <title>Retromobiles</title>
+</head>
+<body>
+    <header id="bandeau" class="container">
+        <div class="logo"> <a href="index.html"><img src="XD/Retromobiles.png" alt="Logo retromobiles"></a> </div>
+        <!-- <div id="burger">
+            <i class="fas fa-bars"></i>
+        </div>   -->
+    </header>
+    <main class="container">
+        <nav id="menuprincipal">   
+            <!-- <img  class="dropdown" src="XD/car (1).png">   -->
+            <div id="burger">
+                <img  class="dropdown" src="XD/car (1).png"> 
+            </div>   
+            <ul>
+                <li><a href="index.html">A&nbsp;Propos</a></li>
+                <li><a href="#">Guide&nbsp;Auto</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="blog.html">Chronique</a></li>
+            </ul>
+        </nav>
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="XD/cropped-camion-citroen-retromobiles.jpg"  alt="citroen" />
+                <img src="XD/cropped-retromobiles-renault-4cv.jpg"  alt="renault"  /> 
+                <img src="XD/old_car_resized.jpg"  alt="image3"  />
+            </div>
+        </div>
+        <div class="above_text">
+            <img src="victor.jpg" alt="victor">
+            <h2>LES CHRONIQUES DE VICTOR</h2>
+        </div>
+        <article id="trois_divs_blog">
+            <section class="img_description">
+                <img src="XD/Chroniques/alba.jpg" alt="Voiture classic alba">
+                <p>Qui d’entre nous savait …
+                    Qui connaissait, devrais je dire,
+                    plus particulièrement, les automobiles <strong>ALBA</strong> ?
+                    Vacharde question, car cette marque d’automobile 
+                    pourtant bien de chez nous, a disparu corps et biens, 
+                    il y a bien longtemps. Vous êtes parfaitement excusables donc et, 
+                    quant à moi, toujours à l'affût, je saisis au vol cette lacune, 
+                    pour vous parler d’ALBA,, l’une des 143 marques d’automobiles françaises, 
+                    de l’époque , c’est à dire celle de l’âge d’or de l’industrie 
+                    automobile française.
+                    </p>
+             </section>
+            <section class=" img_description">
+                <img src="XD/Chroniques/vasel.jpg" alt="Voiture facel vega">
+                <p>Qui d’entre nous savait que…
+                    Le nom de la célèbre, et malheureusement, 
+                    éphémère marque française d’automobiles 
+                    <strong>FACEL VEGA</strong>,
+                     était tout simplement l’acronyme de Forges
+                      et Ateliers de Construction d’Eure et Loir 
+                      (pour FACEL) et que VEGA c’était imposé, 
+                      par le goût de l’époque de donner les noms 
+                      d’astres par quelques constructeurs d’automobiles 
+                      à leurs modèles, à l’instar des marques Panhard, Simca,
+                       Ford et même de Bentley.
+                    </p>
+            </section>
+            </section>
+        </article>
+        <div class="page_contact">
+            <div class="contact">
+                <h3>Contact</h3>
+                <hr>
+                <p>Par téléphone:<br>06 78 52 44 43<br>
+                (president)<br>06 41 76 39 60<br>
+                (webmaster)
+                </p>
+                <a href="#"><p class="boutton1">Formulaire de<br>contact</p></a>
+            </div>
+            <div class="adresse">
+                <h3>Adresse&nbsp;postale</h3>
+                <hr>
+                <address>Rue des<br>Vauzelles<br>
+                <strong>44110<br>Chateaubriant</strong></address>
+                <a href="https://www.facebook.com/retromobileslamee/"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="abonnement">
+                <h3>Abonnement</h3>
+                <hr>
+                <p>Abonnez-vous à<br>notre <strong><a href="blog.html" class="boutton2">BLOG</a></strong></p>
+                <p> <input type="email" id="email" name="email" placeholder="Votre email..">
+                    <input type="submit" id="submit" value="Submit"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logo"><img src="XD/Retromobiles-fond-gris-foncee.png" alt="Logo retromobiles"></div>
+        <p>Rétromobiles de la Mée - Association loi 1901 - Tout droits réservés</p>
+        <p><a href="mention_legales.html">Mention Légales</a></p>
+    </footer>
+     <!--Scripts du slider-->
+     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+     <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+     <script type="text/javascript">
+     $(window).load(function() {
+         $('#slider').nivoSlider();
+     });
+         $('#menuprincipal #burger').click(function(){
+             $('#menuprincipal ul').slideToggle(1500);
+     })
+    </script>
+</body>
+</html>
